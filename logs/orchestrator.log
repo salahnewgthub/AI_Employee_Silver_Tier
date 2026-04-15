@@ -1,0 +1,1397 @@
+2026-04-11 09:40:38,071 [Orchestrator] INFO: ==================================================
+2026-04-11 09:40:38,071 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-11 09:40:38,072 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-11 09:40:38,072 [Orchestrator] INFO: DRY_RUN: False
+2026-04-11 09:40:38,072 [Orchestrator] INFO: ==================================================
+2026-04-11 09:40:38,383 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-11 09:40:38,565 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-11 09:40:38,618 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-11 09:40:38,628 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-11 09:41:30,339 [GmailWatcher] INFO: No valid token found — launching browser for re-authentication...
+2026-04-11 09:41:30,340 [GmailWatcher] ERROR: Gmail setup failed: client_secrets.json not found at E:\AI_Employee_Silver_Tier\scripts\client_secrets.json. Download it from Google Cloud Console.
+2026-04-11 09:41:30,340 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-11 09:41:38,838 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:42:38,839 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:43:38,841 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:44:38,841 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:45:38,844 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:46:38,846 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:47:38,884 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:48:38,886 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:49:38,889 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:50:38,892 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:51:39,496 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:52:39,497 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:53:39,497 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:54:39,498 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:55:39,499 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:56:39,499 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:57:39,500 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:58:39,501 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 09:59:39,503 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 10:00:39,503 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 10:00:44,398 [Orchestrator] INFO: Orchestrator stopped by user.
+Traceback (most recent call last):
+Fatal Python error: _PySemaphore_Wakeup: parking_lot: ReleaseSemaphore failed
+Python runtime state: initialized
+
+Thread 0x000047b4 (most recent call first):
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 385 in dispatch_events
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1043 in _bootstrap_inner
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1014 in _bootstrap
+
+Thread 0x00002d50 (most recent call first):
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1094 in join
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 246 in _clear_emitters
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 372 in unschedule_all
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 376 in on_thread_stop
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\utils\__init__.py", line 64 in stop
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\watchdog\observers\api.py", line 186 in stop
+  File "E:\AI_Employee_Silver_Tier\scripts\filesystem_watcher.py", line 58 in <module>
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 125, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-11 17:49:50,540 [Orchestrator] INFO: ==================================================
+2026-04-11 17:49:50,540 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-11 17:49:50,541 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-11 17:49:50,541 [Orchestrator] INFO: DRY_RUN: False
+2026-04-11 17:49:50,542 [Orchestrator] INFO: ==================================================
+2026-04-11 17:49:50,549 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-11 17:49:50,550 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-11 17:49:50,553 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-11 17:49:50,556 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-11 17:49:50,823 [GmailWatcher] INFO: Loaded 18 processed email IDs from disk.
+2026-04-11 17:50:10,587 [GmailWatcher] INFO: Token expired — refreshing silently...
+2026-04-11 17:50:11,695 [GmailWatcher] INFO: Token refreshed successfully.
+2026-04-11 17:50:11,704 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-11 17:50:11,709 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-11 17:50:11,709 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-11 17:50:13,453 [GmailWatcher] INFO: Found 1 new unread email(s) (out of 18 total unread in last 24h)
+2026-04-11 17:50:14,161 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260411_175014_19d7c264.md
+2026-04-11 17:50:20,566 [Orchestrator] INFO: New files detected: ['EMAIL_20260411_175014_19d7c264.md']
+2026-04-11 17:50:20,592 [Orchestrator] ERROR: Claude trigger failed: [WinError 2] The system cannot find the file specified
+2026-04-11 17:50:50,558 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 17:51:50,558 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-11 17:52:47,323 [Orchestrator] INFO: Orchestrator stopped by user.
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-12 10:09:06,740 [Orchestrator] INFO: ==================================================
+2026-04-12 10:09:06,740 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-12 10:09:06,741 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-12 10:09:06,741 [Orchestrator] INFO: DRY_RUN: False
+2026-04-12 10:09:06,741 [Orchestrator] INFO: ==================================================
+2026-04-12 10:09:06,796 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-12 10:09:06,798 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-12 10:09:06,807 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-12 10:09:06,830 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-12 10:09:06,849 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-12 10:09:06,876 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+LinkedIn: no new draft needed yet
+2026-04-12 10:09:07,053 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:09:07,081 [GmailWatcher] INFO: Loaded 15 processed email IDs from disk.
+2026-04-12 10:09:07,099 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-12 10:09:09,716 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 10:09:11,870 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 10:09:14,221 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 10:09:20,196 [GmailWatcher] INFO: Token expired — refreshing silently...
+2026-04-12 10:09:22,170 [GmailWatcher] INFO: Token refreshed successfully.
+2026-04-12 10:09:22,180 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-12 10:09:22,184 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-12 10:09:22,184 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-12 10:09:23,653 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 10:09:23,653 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 10:09:23,752 [Orchestrator] INFO: Orchestrator stopped by user.
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 173, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 36, in run
+    items = self.check_for_updates()
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 70, in check_for_updates
+    time.sleep(5)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 36, in run
+    items = self.check_for_updates()
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 108, in check_for_updates
+    ).execute()
+      ~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 923, in execute
+    resp, content = _retry_request(
+                    ~~~~~~~~~~~~~~^
+        http,
+        ^^^^^
+    ...<7 lines>...
+        headers=self.headers,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+                        ~~~~~~~~~~~~~~~~~^
+        uri,
+        ^^^^
+    ...<5 lines>...
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1727, in request
+    (response, content) = self._request(
+                          ~~~~~~~~~~~~~^
+        conn, authority, uri, request_uri, method, body, headers, redirections, cachekey,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1399, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-12 10:11:45,767 [Orchestrator] INFO: ==================================================
+2026-04-12 10:11:45,767 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-12 10:11:45,767 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-12 10:11:45,767 [Orchestrator] INFO: DRY_RUN: False
+2026-04-12 10:11:45,768 [Orchestrator] INFO: ==================================================
+2026-04-12 10:11:45,773 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-12 10:11:45,791 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-12 10:11:45,860 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-12 10:11:46,158 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-12 10:11:46,296 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-12 10:11:46,518 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+LinkedIn: no new draft needed yet
+2026-04-12 10:11:47,230 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:11:47,268 [GmailWatcher] INFO: Loaded 15 processed email IDs from disk.
+2026-04-12 10:11:47,271 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-12 10:12:13,436 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 10:12:17,203 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 10:12:17,255 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 10:12:17,537 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:12:21,031 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 10:12:36,998 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 10:12:36,998 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 10:12:39,331 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-12 10:12:39,368 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-12 10:12:39,368 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-12 10:12:41,411 [GmailWatcher] INFO: Found 3 new unread email(s) (out of 8 total unread in last 24h)
+2026-04-12 10:12:42,111 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 10:12:42,234 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260412_101242_19d7f73f.md
+2026-04-12 10:12:42,290 [WhatsAppWatcher] INFO: Fallback rows found: 68
+2026-04-12 10:12:42,481 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+105 unread messages
+AI/Spec-Driven Online Hackathon
+Yesterday
+Loading…
+1 unread message
+Quarter 04
+Friday
+Loading…
+48 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+Yesterday
+Loading
+2026-04-12 10:12:42,481 [WhatsAppWatcher] INFO: [Row 0] KEYWORD MATCH: ['payment']
+2026-04-12 10:12:42,907 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260412_101242_19d7ec77.md
+2026-04-12 10:12:42,930 [WhatsAppWatcher] INFO: [Row 11] UNREAD chat content:
+1 unread message
+Eommma
+Yesterday
+Payment
+1
+2026-04-12 10:12:42,930 [WhatsAppWatcher] INFO: [Row 11] KEYWORD MATCH: ['payment']
+2026-04-12 10:12:43,034 [WhatsAppWatcher] INFO: [Row 12] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 10:12:43,073 [WhatsAppWatcher] INFO: [Row 12] No keyword match — skipping.
+2026-04-12 10:12:43,267 [WhatsAppWatcher] INFO: [Row 14] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+Yesterday
+Ziaullah Khan
+: 
+https://web.facebook.com/share/v/1AsxcsSJzi/
+1
+2026-04-12 10:12:43,267 [WhatsAppWatcher] INFO: [Row 14] No keyword match — skipping.
+2026-04-12 10:12:43,562 [WhatsAppWatcher] INFO: [Row 23] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 10:12:43,562 [WhatsAppWatcher] INFO: [Row 23] No keyword match — skipping.
+2026-04-12 10:12:43,635 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260412_101243_19d7e7f4.md
+2026-04-12 10:12:46,142 [WhatsAppWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\WHATSAPP_20260412_101246.md
+2026-04-12 10:12:46,143 [WhatsAppWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\WHATSAPP_20260412_101246.md
+2026-04-12 10:12:46,518 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 10:12:46,737 [Orchestrator] INFO: New files detected: ['WHATSAPP_20260412_101246.md', 'EMAIL_20260412_101243_19d7e7f4.md', 'EMAIL_20260412_101242_19d7ec77.md', 'EMAIL_20260412_101242_19d7f73f.md']
+2026-04-12 10:12:47,560 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 10:12:47,695 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:13:17,695 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 10:13:17,816 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:13:23,975 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 10:13:24,895 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 10:13:27,687 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 10:13:36,167 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 10:13:36,167 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 10:13:41,185 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 10:13:41,299 [WhatsAppWatcher] INFO: Fallback rows found: 68
+2026-04-12 10:13:41,387 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+112 unread messages
+AI/Spec-Driven Online Hackathon
+6:47 am
+~\u202fRohaan Umair
+: 
+SMIT offers these courses and admissions to both males and females. They just run separate batches for men and women. This
+2026-04-12 10:13:41,387 [WhatsAppWatcher] INFO: [Row 0] KEYWORD MATCH: ['payment']
+2026-04-12 10:13:41,481 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+112 unread messages
+AI/Spec-Driven Online Hackathon
+6:47 am
+~\u202fRohaan Umair
+: 
+SMIT offers these courses and admissions to both males and females. They just run separate batches for men and women. This
+2026-04-12 10:13:41,481 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 10:13:41,515 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+6 unread messages
+Quarter 04
+2:20 am
++92 310 1022327
+: 
+Class Hogi ya ni?
+6
+2026-04-12 10:13:41,515 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 10:13:41,527 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+46 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+1:44 am
+~\u202fhardest
+: 
+Virtual University VU LMS Complete Guide 2026 | Step-by-Step Tutorial https://youtu.be/W7oEs5rjo2E?si=w7h2pO-WR
+2026-04-12 10:13:41,527 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 10:13:41,546 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+17 unread messages
+The World Markaz Nizamuddin
+1:35 am
+~\u202fkhanshahrozali
+: 
+\u0627\u0644\u0634\u064a\u062e \u0627\u0644\u0628\u0634\u064a\u0631 \u0623\u0645\u064a\u0631 \u0627\u0644\u062c\u0632\u0627\u0626\u0631 \u0645\u0639 \u0623\u062d\u0628\u0627\u0628\u0647 \u0627\u0644\u0643\u0631\u0627\u0645 \u0634\u06cc\u062e \u0627\u0644\u0628\u0634\u06cc\u0631\u060c \u0627\u0645\u06cc\u0631\u0650 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u060c \u0627\u067e\u0646\u06d2 \u0645\u062d\u062a\u0631\u0645 \u0627\u062d\u0628\u0627\u0628 \u06a9\u06d2 \u0633\u0627\u062a\u06be Sheikh Al-Bashir, Ameer of Alg
+2026-04-12 10:13:41,546 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 10:13:41,617 [WhatsAppWatcher] INFO: [Row 11] UNREAD chat content:
+1 unread message
+Eommma
+Yesterday
+Payment
+1
+2026-04-12 10:13:41,617 [WhatsAppWatcher] INFO: [Row 11] KEYWORD MATCH: ['payment']
+2026-04-12 10:13:41,633 [WhatsAppWatcher] INFO: [Row 12] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 10:13:41,634 [WhatsAppWatcher] INFO: [Row 12] No keyword match — skipping.
+2026-04-12 10:13:41,654 [WhatsAppWatcher] INFO: [Row 14] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+Yesterday
+Ziaullah Khan
+: 
+https://web.facebook.com/share/v/1AsxcsSJzi/
+1
+2026-04-12 10:13:41,655 [WhatsAppWatcher] INFO: [Row 14] No keyword match — skipping.
+2026-04-12 10:13:41,711 [WhatsAppWatcher] INFO: [Row 23] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 10:13:41,711 [WhatsAppWatcher] INFO: [Row 23] No keyword match — skipping.
+2026-04-12 10:13:42,756 [WhatsAppWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\WHATSAPP_20260412_101342.md
+2026-04-12 10:13:42,756 [WhatsAppWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\WHATSAPP_20260412_101342.md
+2026-04-12 10:13:46,519 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 10:13:47,817 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 10:13:47,933 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 10:13:53,847 [Orchestrator] INFO: Orchestrator stopped by user.
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 173, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-12 19:26:27,674 [Orchestrator] INFO: ==================================================
+2026-04-12 19:26:27,674 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-12 19:26:27,674 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-12 19:26:27,674 [Orchestrator] INFO: DRY_RUN: False
+2026-04-12 19:26:27,674 [Orchestrator] INFO: ==================================================
+2026-04-12 19:26:27,678 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-12 19:26:27,680 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-12 19:26:27,680 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-12 19:26:27,681 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-12 19:26:27,687 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-12 19:26:27,691 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 0 existing)
+2026-04-12 19:26:27,695 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-12 19:26:27,696 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 1 existing)
+LinkedIn: no new draft needed yet
+2026-04-12 19:26:27,854 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:26:27,870 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-12 19:26:27,887 [GmailWatcher] INFO: Loaded 20 processed email IDs from disk.
+2026-04-12 19:26:30,919 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:26:32,870 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:26:35,123 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:26:41,480 [GmailWatcher] INFO: Token expired — refreshing silently...
+2026-04-12 19:26:42,981 [GmailWatcher] INFO: Token refreshed successfully.
+2026-04-12 19:26:43,005 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-12 19:26:43,015 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-12 19:26:43,016 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-12 19:26:43,728 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:26:43,729 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:26:45,084 [GmailWatcher] INFO: Found 1 new unread email(s) (out of 6 total unread in last 24h)
+2026-04-12 19:26:45,783 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260412_192645_19d81edd.md
+2026-04-12 19:26:47,689 [Orchestrator] INFO: New files detected: ['EMAIL_20260412_192645_19d81edd.md']
+2026-04-12 19:26:48,760 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:26:48,870 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:26:48,969 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+1 unread message
+Ahmed Raza
+2:30 pm
+Loading…
+117 unread messages
+AI/Spec-Driven Online Hackathon
+6:09 pm
+Loading…
+68 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+6:44 pm
+Loading…
+1
+2026-04-12 19:26:48,969 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-12 19:26:49,378 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+70 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+6:48 pm
+~\u202fKamrankhankhi5
+: 
+Time hua karey to LinkedIn dekhliya kero mera Jo update Yahan Nahin share kerta wahan zaroor share kerta
+2026-04-12 19:26:49,378 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:26:49,667 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+18 unread messages
+The World Markaz Nizamuddin
+4:40 pm
+~\u202fkhanshahrozali
+: 
+ Europe Mashwara concludes with an emotional dua by the Amir of Dawah and Tabligh, Hadhratji Ml Saad Hafidhahullah.  May Alla
+2026-04-12 19:26:49,667 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 19:26:49,783 [WhatsAppWatcher] INFO: [Row 5] UNREAD chat content:
+19 unread messages
+Quarter 04
+2:37 pm
+~\u202fZohaib Javed
+: 
+Sorry for the Agent to call you Zia Khan! without saying respectfully Sir
+19
+2026-04-12 19:26:49,784 [WhatsAppWatcher] INFO: [Row 5] No keyword match — skipping.
+2026-04-12 19:26:49,822 [WhatsAppWatcher] INFO: [Row 6] UNREAD chat content:
+2 unread messages
+GIAIC 02 AI/Spec-Driven Online Hackathon
+2:14 pm
+Ziaullah Khan
+: 
+Audio
+2
+2026-04-12 19:26:49,823 [WhatsAppWatcher] INFO: [Row 6] No keyword match — skipping.
+2026-04-12 19:26:50,013 [WhatsAppWatcher] INFO: [Row 13] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 19:26:50,013 [WhatsAppWatcher] INFO: [Row 13] No keyword match — skipping.
+2026-04-12 19:26:50,126 [WhatsAppWatcher] INFO: [Row 22] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 19:26:50,127 [WhatsAppWatcher] INFO: [Row 22] No keyword match — skipping.
+2026-04-12 19:26:50,516 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-12 19:26:57,855 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:26:57,977 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:27:23,439 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:27:23,986 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:27:25,849 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:27:27,696 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 19:27:27,977 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:27:28,079 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:27:32,747 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:27:32,747 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:27:37,780 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:27:37,894 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:27:37,933 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_x
+2026-04-12 19:27:37,933 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-12 19:27:37,970 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+2026-04-12 19:27:37,970 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 19:27:37,986 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_xqOfE?si=2bsshC2zx6YLS4-n 1ST VIDEO BACKEND DEVELOPMENT SERIES
+118
+2026-04-12 19:27:37,986 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 19:27:38,004 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+70 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+6:48 pm
+~\u202fKamrankhankhi5
+: 
+Time hua karey to LinkedIn dekhliya kero mera Jo update Yahan Nahin share kerta wahan zaroor share kerta
+2026-04-12 19:27:38,004 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:27:38,027 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+18 unread messages
+The World Markaz Nizamuddin
+4:40 pm
+~\u202fkhanshahrozali
+: 
+ Europe Mashwara concludes with an emotional dua by the Amir of Dawah and Tabligh, Hadhratji Ml Saad Hafidhahullah.  May Alla
+2026-04-12 19:27:38,027 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 19:27:38,066 [WhatsAppWatcher] INFO: [Row 6] UNREAD chat content:
+20 unread messages
+Quarter 04
+2:37 pm
+~\u202fmaryam.arif_ pinned a message
+20
+2026-04-12 19:27:38,066 [WhatsAppWatcher] INFO: [Row 6] No keyword match — skipping.
+2026-04-12 19:27:38,085 [WhatsAppWatcher] INFO: [Row 7] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+2:14 pm
+Ziaullah Khan
+: 
+Audio
+1
+2026-04-12 19:27:38,085 [WhatsAppWatcher] INFO: [Row 7] No keyword match — skipping.
+2026-04-12 19:27:38,370 [WhatsAppWatcher] INFO: [Row 13] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 19:27:38,370 [WhatsAppWatcher] INFO: [Row 13] No keyword match — skipping.
+2026-04-12 19:27:38,516 [WhatsAppWatcher] INFO: [Row 22] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 19:27:38,516 [WhatsAppWatcher] INFO: [Row 22] No keyword match — skipping.
+2026-04-12 19:27:38,871 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-12 19:27:58,080 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:27:58,194 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:28:10,459 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:28:11,233 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:28:13,105 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:28:22,244 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:28:22,244 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:28:28,359 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 19:28:28,884 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-12 19:28:29,047 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:28:29,956 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:28:36,088 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_x
+2026-04-12 19:28:36,088 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+LinkedIn: no new draft needed yet
+2026-04-12 19:28:36,820 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:28:37,523 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+2026-04-12 19:28:37,523 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 19:28:38,419 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_xqOfE?si=2bsshC2zx6YLS4-n 1ST VIDEO BACKEND DEVELOPMENT SERIES
+118
+2026-04-12 19:28:38,419 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 19:28:39,454 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+70 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+6:48 pm
+~\u202fKamrankhankhi5
+: 
+Time hua karey to LinkedIn dekhliya kero mera Jo update Yahan Nahin share kerta wahan zaroor share kerta
+2026-04-12 19:28:39,454 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:28:40,270 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+18 unread messages
+The World Markaz Nizamuddin
+4:40 pm
+~\u202fkhanshahrozali
+: 
+ Europe Mashwara concludes with an emotional dua by the Amir of Dawah and Tabligh, Hadhratji Ml Saad Hafidhahullah.  May Alla
+2026-04-12 19:28:40,270 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 19:28:44,935 [WhatsAppWatcher] INFO: [Row 6] UNREAD chat content:
+20 unread messages
+Quarter 04
+2:37 pm
+~\u202fmaryam.arif_ pinned a message
+20
+2026-04-12 19:28:44,935 [WhatsAppWatcher] INFO: [Row 6] No keyword match — skipping.
+2026-04-12 19:28:45,895 [WhatsAppWatcher] INFO: [Row 7] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+2:14 pm
+Ziaullah Khan
+: 
+Audio
+1
+2026-04-12 19:28:45,896 [WhatsAppWatcher] INFO: [Row 7] No keyword match — skipping.
+2026-04-12 19:28:48,478 [WhatsAppWatcher] INFO: [Row 13] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 19:28:48,478 [WhatsAppWatcher] INFO: [Row 13] No keyword match — skipping.
+2026-04-12 19:28:52,319 [WhatsAppWatcher] INFO: [Row 22] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 19:28:52,320 [WhatsAppWatcher] INFO: [Row 22] No keyword match — skipping.
+2026-04-12 19:29:15,155 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-12 19:29:19,650 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+LinkedIn: no new draft needed yet
+2026-04-12 19:29:20,752 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:29:28,588 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 19:29:50,752 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:29:50,835 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:29:53,400 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:29:53,992 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:29:55,718 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:29:58,405 [Orchestrator] WARNING: Claude timed out after 180s
+2026-04-12 19:30:10,119 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:30:10,120 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:30:15,135 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:30:15,242 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:30:15,280 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_x
+2026-04-12 19:30:15,281 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-12 19:30:15,311 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+2026-04-12 19:30:15,311 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 19:30:15,337 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_xqOfE?si=2bsshC2zx6YLS4-n 1ST VIDEO BACKEND DEVELOPMENT SERIES
+118
+2026-04-12 19:30:15,337 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 19:30:15,371 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+70 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+6:48 pm
+~\u202fKamrankhankhi5
+: 
+Time hua karey to LinkedIn dekhliya kero mera Jo update Yahan Nahin share kerta wahan zaroor share kerta
+2026-04-12 19:30:15,371 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:30:15,392 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+18 unread messages
+The World Markaz Nizamuddin
+4:40 pm
+~\u202fkhanshahrozali
+: 
+ Europe Mashwara concludes with an emotional dua by the Amir of Dawah and Tabligh, Hadhratji Ml Saad Hafidhahullah.  May Alla
+2026-04-12 19:30:15,393 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 19:30:15,419 [WhatsAppWatcher] INFO: [Row 6] UNREAD chat content:
+20 unread messages
+Quarter 04
+2:37 pm
+~\u202fmaryam.arif_ pinned a message
+20
+2026-04-12 19:30:15,420 [WhatsAppWatcher] INFO: [Row 6] No keyword match — skipping.
+2026-04-12 19:30:15,439 [WhatsAppWatcher] INFO: [Row 7] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+2:14 pm
+Ziaullah Khan
+: 
+Audio
+1
+2026-04-12 19:30:15,440 [WhatsAppWatcher] INFO: [Row 7] No keyword match — skipping.
+2026-04-12 19:30:15,539 [WhatsAppWatcher] INFO: [Row 13] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 19:30:15,539 [WhatsAppWatcher] INFO: [Row 13] No keyword match — skipping.
+2026-04-12 19:30:15,650 [WhatsAppWatcher] INFO: [Row 22] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 19:30:15,650 [WhatsAppWatcher] INFO: [Row 22] No keyword match — skipping.
+2026-04-12 19:30:16,479 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-12 19:30:20,836 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:30:20,931 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:30:28,588 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 19:30:48,221 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:30:49,212 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:30:50,960 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:30:51,380 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:30:53,316 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:31:00,690 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:31:00,690 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:31:05,705 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:31:05,782 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:31:05,842 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+72 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+7:30 pm
+~\u202fHijaab
+: 
+Send krden details
+72
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6
+2026-04-12 19:31:05,842 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-12 19:31:05,859 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+72 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+7:30 pm
+~\u202fHijaab
+: 
+Send krden details
+72
+2026-04-12 19:31:05,859 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 19:31:05,875 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+2026-04-12 19:31:05,876 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 19:31:05,897 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_xqOfE?si=2bsshC2zx6YLS4-n 1ST VIDEO BACKEND DEVELOPMENT SERIES
+118
+2026-04-12 19:31:05,898 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:31:05,926 [WhatsAppWatcher] INFO: [Row 4] UNREAD chat content:
+18 unread messages
+The World Markaz Nizamuddin
+4:40 pm
+~\u202fkhanshahrozali
+: 
+ Europe Mashwara concludes with an emotional dua by the Amir of Dawah and Tabligh, Hadhratji Ml Saad Hafidhahullah.  May Alla
+2026-04-12 19:31:05,926 [WhatsAppWatcher] INFO: [Row 4] No keyword match — skipping.
+2026-04-12 19:31:05,949 [WhatsAppWatcher] INFO: [Row 6] UNREAD chat content:
+20 unread messages
+Quarter 04
+2:37 pm
+~\u202fmaryam.arif_ pinned a message
+20
+2026-04-12 19:31:05,950 [WhatsAppWatcher] INFO: [Row 6] No keyword match — skipping.
+2026-04-12 19:31:05,965 [WhatsAppWatcher] INFO: [Row 7] UNREAD chat content:
+1 unread message
+GIAIC 02 AI/Spec-Driven Online Hackathon
+2:14 pm
+Ziaullah Khan
+: 
+Audio
+1
+2026-04-12 19:31:05,965 [WhatsAppWatcher] INFO: [Row 7] No keyword match — skipping.
+2026-04-12 19:31:06,034 [WhatsAppWatcher] INFO: [Row 13] UNREAD chat content:
+19 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Yesterday
+~\u202fSaqib
+: 
+Inshallah
+19
+2026-04-12 19:31:06,034 [WhatsAppWatcher] INFO: [Row 13] No keyword match — skipping.
+2026-04-12 19:31:06,104 [WhatsAppWatcher] INFO: [Row 22] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-12 19:31:06,104 [WhatsAppWatcher] INFO: [Row 22] No keyword match — skipping.
+2026-04-12 19:31:06,452 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-12 19:31:21,381 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:31:21,492 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:31:28,626 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-12 19:31:38,039 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-12 19:31:38,894 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-12 19:31:40,746 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-12 19:31:48,695 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-12 19:31:48,695 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-12 19:31:51,493 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:31:51,681 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:31:53,717 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-12 19:31:53,935 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-12 19:31:54,769 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+72 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+7:30 pm
+~\u202fHijaab
+: 
+Send krden details
+72
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6
+2026-04-12 19:31:54,770 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-12 19:31:55,786 [WhatsAppWatcher] INFO: [Row 1] UNREAD chat content:
+72 unread messages
+Saturday Evening AI/Spec-Driven Online Hackathon
+7:30 pm
+~\u202fHijaab
+: 
+Send krden details
+72
+2026-04-12 19:31:55,786 [WhatsAppWatcher] INFO: [Row 1] No keyword match — skipping.
+2026-04-12 19:31:56,705 [WhatsAppWatcher] INFO: [Row 2] UNREAD chat content:
+2 unread messages
+Ahmed Raza
+7:17 pm
+https://youtube.com/shorts/Mnfi_omIDRA?si=GOwq2Hst-a6UGTc7
+2
+2026-04-12 19:31:56,705 [WhatsAppWatcher] INFO: [Row 2] No keyword match — skipping.
+2026-04-12 19:31:57,595 [WhatsAppWatcher] INFO: [Row 3] UNREAD chat content:
+118 unread messages
+AI/Spec-Driven Online Hackathon
+7:13 pm
+~\u202fMuzaffar Ali
+: 
+https://youtu.be/JdlpM_xqOfE?si=2bsshC2zx6YLS4-n 1ST VIDEO BACKEND DEVELOPMENT SERIES
+118
+2026-04-12 19:31:57,596 [WhatsAppWatcher] INFO: [Row 3] No keyword match — skipping.
+2026-04-12 19:31:58,219 [WhatsAppWatcher] WARNING: [Row 4] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,225 [WhatsAppWatcher] WARNING: [Row 5] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,231 [WhatsAppWatcher] WARNING: [Row 6] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,236 [WhatsAppWatcher] WARNING: [Row 7] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,240 [WhatsAppWatcher] WARNING: [Row 8] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,253 [WhatsAppWatcher] WARNING: [Row 9] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,257 [WhatsAppWatcher] WARNING: [Row 10] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,260 [WhatsAppWatcher] WARNING: [Row 11] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,263 [WhatsAppWatcher] WARNING: [Row 12] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,266 [WhatsAppWatcher] WARNING: [Row 13] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,271 [WhatsAppWatcher] WARNING: [Row 14] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,275 [WhatsAppWatcher] WARNING: [Row 15] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,278 [WhatsAppWatcher] WARNING: [Row 16] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,281 [WhatsAppWatcher] WARNING: [Row 17] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,284 [WhatsAppWatcher] WARNING: [Row 18] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,288 [WhatsAppWatcher] WARNING: [Row 19] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,292 [WhatsAppWatcher] WARNING: [Row 20] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,296 [WhatsAppWatcher] WARNING: [Row 21] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,299 [WhatsAppWatcher] WARNING: [Row 22] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,303 [WhatsAppWatcher] WARNING: [Row 23] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,307 [WhatsAppWatcher] WARNING: [Row 24] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,310 [WhatsAppWatcher] WARNING: [Row 25] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,313 [WhatsAppWatcher] WARNING: [Row 26] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,317 [WhatsAppWatcher] WARNING: [Row 27] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,321 [WhatsAppWatcher] WARNING: [Row 28] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,325 [WhatsAppWatcher] WARNING: [Row 29] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,327 [WhatsAppWatcher] WARNING: [Row 30] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,331 [WhatsAppWatcher] WARNING: [Row 31] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,333 [WhatsAppWatcher] WARNING: [Row 32] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,339 [WhatsAppWatcher] WARNING: [Row 33] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,344 [WhatsAppWatcher] WARNING: [Row 34] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,347 [WhatsAppWatcher] WARNING: [Row 35] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,350 [WhatsAppWatcher] WARNING: [Row 36] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,354 [WhatsAppWatcher] WARNING: [Row 37] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,357 [WhatsAppWatcher] WARNING: [Row 38] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,361 [WhatsAppWatcher] WARNING: [Row 39] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,365 [WhatsAppWatcher] WARNING: [Row 40] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,368 [WhatsAppWatcher] WARNING: [Row 41] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,372 [WhatsAppWatcher] WARNING: [Row 42] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,375 [WhatsAppWatcher] WARNING: [Row 43] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,378 [WhatsAppWatcher] WARNING: [Row 44] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,381 [WhatsAppWatcher] WARNING: [Row 45] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,385 [WhatsAppWatcher] WARNING: [Row 46] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,387 [WhatsAppWatcher] WARNING: [Row 47] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,390 [WhatsAppWatcher] WARNING: [Row 48] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,393 [WhatsAppWatcher] WARNING: [Row 49] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,396 [WhatsAppWatcher] WARNING: [Row 50] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,403 [WhatsAppWatcher] WARNING: [Row 51] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,406 [WhatsAppWatcher] WARNING: [Row 52] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,409 [WhatsAppWatcher] WARNING: [Row 53] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,413 [WhatsAppWatcher] WARNING: [Row 54] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,417 [WhatsAppWatcher] WARNING: [Row 55] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,420 [WhatsAppWatcher] WARNING: [Row 56] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,423 [WhatsAppWatcher] WARNING: [Row 57] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,426 [WhatsAppWatcher] WARNING: [Row 58] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,429 [WhatsAppWatcher] WARNING: [Row 59] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,432 [WhatsAppWatcher] WARNING: [Row 60] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,436 [WhatsAppWatcher] WARNING: [Row 61] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,439 [WhatsAppWatcher] WARNING: [Row 62] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,442 [WhatsAppWatcher] WARNING: [Row 63] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,449 [WhatsAppWatcher] WARNING: [Row 64] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,453 [WhatsAppWatcher] WARNING: [Row 65] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,456 [WhatsAppWatcher] WARNING: [Row 66] Could not read: ElementHandle.query_selector: Target page, context or browser has been closed
+2026-04-12 19:31:58,456 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-12 19:32:21,682 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-12 19:32:21,799 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-12 19:32:26,692 [Orchestrator] INFO: Orchestrator stopped by user.
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 173, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-13 20:02:48,159 [Orchestrator] INFO: ==================================================
+2026-04-13 20:02:48,161 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-13 20:02:48,161 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-13 20:02:48,161 [Orchestrator] INFO: DRY_RUN: False
+2026-04-13 20:02:48,161 [Orchestrator] INFO: ==================================================
+2026-04-13 20:02:48,163 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-13 20:02:48,164 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-13 20:02:48,165 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-13 20:02:48,171 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-13 20:02:48,189 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-13 20:02:48,205 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 0 existing)
+2026-04-13 20:02:48,237 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-13 20:02:48,239 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+LinkedIn: no new draft needed yet
+2026-04-13 20:02:48,652 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-13 20:02:48,663 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-13 20:02:48,664 [GmailWatcher] INFO: Loaded 26 processed email IDs from disk.
+2026-04-13 20:03:02,762 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-13 20:03:10,559 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-13 20:03:17,376 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-13 20:03:18,665 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-13 20:03:18,909 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-13 20:03:20,310 [Orchestrator] INFO: Orchestrator stopped by user.
+2026-04-13 20:03:20,318 [WhatsAppWatcher] INFO: Selector not found: #pane-side, trying next...
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 161, in <module>
+    watcher = GmailWatcher()
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 22, in __init__
+    self._setup_gmail()
+    ~~~~~~~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 53, in _setup_gmail
+    from googleapiclient.discovery import build
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\discovery.py", line 42, in <module>
+    import google.api_core.client_options
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\__init__.py", line 40, in <module>
+    check_python_version(package="google.api_core")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\_python_version_support.py", line 210, in check_python_version
+    package_label, _ = _get_distribution_and_import_packages(package)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\_python_version_support.py", line 189, in _get_distribution_and_import_packages
+    distribution_package = _get_pypi_package_name(import_package)
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\_python_version_support.py", line 171, in _get_pypi_package_name
+    module_to_distributions = metadata.packages_distributions()
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py", line 1045, in packages_distributions
+    for pkg in _top_level_declared(dist) or _top_level_inferred(dist):
+                                            ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py", line 1088, in _top_level_inferred
+    opt_names = set(map(_get_toplevel_name, always_iterable(dist.files)))
+                                                            ^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py", line 533, in files
+    return skip_missing_files(
+        make_files(
+    ...<3 lines>...
+        )
+    )
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\_functools.py", line 102, in wrapper
+    return func(param, *args, **kwargs)
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py", line 531, in skip_missing_files
+    return list(filter(lambda path: path.locate().exists(), package_paths))
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py", line 531, in <lambda>
+    return list(filter(lambda path: path.locate().exists(), package_paths))
+                                    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 450, in exists
+    self.stat(follow_symlinks=follow_symlinks)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 515, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-14 09:45:53,402 [Orchestrator] INFO: ==================================================
+2026-04-14 09:45:53,530 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-14 09:45:53,602 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-14 09:45:53,761 [Orchestrator] INFO: DRY_RUN: False
+2026-04-14 09:45:53,825 [Orchestrator] INFO: ==================================================
+2026-04-14 09:45:53,978 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-14 09:45:54,039 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-14 09:45:54,117 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-14 09:45:54,170 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-14 09:45:54,200 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-14 09:45:54,291 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 0 existing)
+2026-04-14 09:45:54,333 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-14 09:45:54,334 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+LinkedIn: no new draft needed yet
+2026-04-14 09:45:55,822 [GmailWatcher] INFO: Loaded 26 processed email IDs from disk.
+2026-04-14 09:45:55,898 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-14 09:45:55,938 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-14 09:46:20,587 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-14 09:46:22,706 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-14 09:46:25,309 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-14 09:46:25,903 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-14 09:46:26,192 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-14 09:46:43,779 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-14 09:46:43,779 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-14 09:46:54,060 [WhatsAppWatcher] ERROR: WhatsApp watcher error: Page.query_selector_all: Target page, context or browser has been closed
+2026-04-14 09:46:54,064 [WhatsAppWatcher] ERROR: Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 78, in check_for_updates
+    chat_rows = page.query_selector_all(
+        '#pane-side [role="listitem"]'
+    )
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 8146, in query_selector_all
+    self._sync(self._impl_obj.query_selector_all(selector=selector))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 410, in query_selector_all
+    return await self._main_frame.query_selector_all(selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 355, in query_selector_all
+    await self._channel.send(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "querySelectorAll", None, dict(selector=selector)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.query_selector_all: Target page, context or browser has been closed
+
+2026-04-14 09:46:54,334 [Orchestrator] INFO: Orchestrator heartbeat — all systems running
+2026-04-14 09:46:55,301 [GmailWatcher] INFO: Token expired — refreshing silently...
+2026-04-14 09:46:56,193 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-14 09:46:56,297 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-14 09:46:56,323 [GmailWatcher] INFO: Token refreshed successfully.
+2026-04-14 09:46:56,332 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-14 09:46:56,362 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-14 09:46:56,362 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-14 09:46:57,725 [GmailWatcher] INFO: Found 4 new unread email(s) (out of 5 total unread in last 24h)
+2026-04-14 09:46:58,250 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260414_094658_19d89ea2.md
+2026-04-14 09:46:58,621 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260414_094658_19d89c0b.md
+2026-04-14 09:46:58,950 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260414_094658_19d8863a.md
+2026-04-14 09:46:59,075 [Orchestrator] INFO: Orchestrator stopped by user.
+Traceback (most recent call last):
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 173, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 38, in run
+    filepath = self.create_action_file(item)
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 128, in create_action_file
+    ).execute()
+      ~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 923, in execute
+    resp, content = _retry_request(
+                    ~~~~~~~~~~~~~~^
+        http,
+        ^^^^^
+    ...<7 lines>...
+        headers=self.headers,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+                        ~~~~~~~~~~~~~~~~~^
+        uri,
+        ^^^^
+    ...<5 lines>...
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1727, in request
+    (response, content) = self._request(
+                          ~~~~~~~~~~~~~^
+        conn, authority, uri, request_uri, method, body, headers, redirections, cachekey,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\httplib2\__init__.py", line 1399, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-14 10:05:08,466 [Orchestrator] INFO: ==================================================
+2026-04-14 10:05:08,467 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-14 10:05:08,468 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-14 10:05:08,469 [Orchestrator] INFO: DRY_RUN: False
+2026-04-14 10:05:08,470 [Orchestrator] INFO: ==================================================
+2026-04-14 10:05:08,483 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-14 10:05:08,486 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-14 10:05:08,487 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-14 10:05:08,488 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-14 10:05:08,491 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-14 10:05:08,513 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 0 existing)
+2026-04-14 10:05:08,513 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-14 10:05:08,514 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+LinkedIn: no new draft needed yet
+2026-04-14 10:05:08,788 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-14 10:05:08,834 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-14 10:05:08,846 [GmailWatcher] INFO: Loaded 29 processed email IDs from disk.
+2026-04-14 10:05:36,381 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-14 10:05:38,840 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-14 10:05:39,594 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+LinkedIn: no new draft needed yet
+2026-04-14 10:05:39,884 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-14 10:05:44,091 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-14 10:05:50,815 [WhatsAppWatcher] INFO: Chat list found using selector: #pane-side
+2026-04-14 10:05:50,815 [WhatsAppWatcher] INFO: Waiting 5 seconds for full render...
+2026-04-14 10:05:53,385 [googleapiclient.discovery_cache] INFO: file_cache is only supported with oauth2client<4.0.0
+2026-04-14 10:05:53,408 [GmailWatcher] INFO: Gmail API connected successfully
+2026-04-14 10:05:53,408 [GmailWatcher] INFO: Starting GmailWatcher
+2026-04-14 10:05:55,881 [WhatsAppWatcher] INFO: Total chat rows found: 0
+2026-04-14 10:05:55,988 [WhatsAppWatcher] INFO: Fallback rows found: 67
+2026-04-14 10:05:56,079 [WhatsAppWatcher] INFO: [Row 0] UNREAD chat content:
+For work
+Thursday
+Loading…
+54 unread messages
+AI/Spec-Driven Online Hackathon
+Yesterday
+Loading…
+2 unread messages
+3hatti Khand@n
+Yesterday
+Loading…
+Rizwan Sunny Ishaq
+03/04/2026
+Loading…
+2 unread mes
+2026-04-14 10:05:56,079 [WhatsAppWatcher] INFO: [Row 0] No keyword match — skipping.
+2026-04-14 10:05:56,458 [WhatsAppWatcher] INFO: [Row 10] UNREAD chat content:
+1 unread message
+The World Markaz Nizamuddin
+Sunday
++92 333 3412928
+: 
+\u062d\u0636\u0631\u062a \u0634\u06cc\u062e \u0627\u0644\u062d\u062f\u06cc\u062b \u0645\u0648\u0644\u0627\u0646\u0627 \u0645\u062d\u0645\u062f \u0632\u06a9\u0631\u06cc\u0627 \u06a9\u0627\u0646\u062f\u06be\u0644\u0648\u06cc \u0631\u062d\u0645\u06c3 \u0627\u0644\u0644\u06c1 \u0639\u0644\u06cc\u06c1 \u06a9\u06d2 \u0635\u0627\u062d\u0628\u0632\u0627\u062f\u06c1 \u067e\u06cc\u0631 \u0637\u0644\u062d\u06c1 \u06a9\u0627\u0646\u062f\u06be\u0644\u0648\u06cc \u0631\u062d\u0645\u06c3 \u0627\u0644\u0644\u06c1 \u0639\u0644\u06cc\u06c1 \u06a9\u06cc \u0627\u06c1\u0644\u06cc\u06c1 \u06a9\u0627 \u062c\u0628 \u0627\u0646\u062a\u0642\u0627\u0644 \u06c1\u0648\u0627 
+2026-04-14 10:05:56,459 [WhatsAppWatcher] INFO: [Row 10] No keyword match — skipping.
+2026-04-14 10:05:56,631 [WhatsAppWatcher] INFO: [Row 16] UNREAD chat content:
+21 unread messages
+GIAIC Q-4 ALL SECTIONS  [Students Discussion]
+Saturday
++92 346 1863082
+: 
+https://www.linkedin.com/posts/afaqulislam_vibekaregapakistan-aiseekho2026-googlefordevelopers-activity-744
+2026-04-14 10:05:56,632 [WhatsAppWatcher] INFO: [Row 16] No keyword match — skipping.
+2026-04-14 10:05:56,791 [WhatsAppWatcher] INFO: [Row 23] UNREAD chat content:
+3 unread messages
+Panaversity1
+Thursday
+Ziaullah Khan
+: 
+We are lucky that our guess was correct, and we focused on Anthropic AI. Right now Claude AI is six months to a years ahead of OpenAI and Googl
+2026-04-14 10:05:56,791 [WhatsAppWatcher] INFO: [Row 23] No keyword match — skipping.
+2026-04-14 10:05:57,421 [GmailWatcher] INFO: Found 1 new unread email(s) (out of 5 total unread in last 24h)
+2026-04-14 10:05:57,693 [WhatsAppWatcher] INFO: No keyword matches in any unread chat. All clear.
+2026-04-14 10:05:58,130 [GmailWatcher] INFO: Created action file: E:\AI_Employee_Silver_Tier\Vault\Needs_Action\EMAIL_20260414_100558_19d871a6.md
+2026-04-14 10:05:58,518 [Orchestrator] INFO: New files detected: ['EMAIL_20260414_100558_19d871a6.md']
+2026-04-14 10:06:04,525 [Orchestrator] INFO: Orchestrator stopped by user.
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 173, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\gmail_watcher.py", line 162, in <module>
+    watcher.run()
+    ~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\base_watcher.py", line 42, in run
+    time.sleep(self.check_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Filesystem watcher running. Drop files into: E:\AI_Employee_Silver_Tier\Vault\Inbox
+2026-04-15 09:50:19,311 [Orchestrator] INFO: ==================================================
+2026-04-15 09:50:19,312 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-15 09:50:19,312 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-15 09:50:19,325 [Orchestrator] INFO: DRY_RUN: False
+2026-04-15 09:50:19,326 [Orchestrator] INFO: ==================================================
+2026-04-15 09:50:19,331 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-15 09:50:19,332 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-15 09:50:19,333 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-15 09:50:19,334 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-15 09:50:19,345 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-15 09:50:19,374 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-15 09:50:19,375 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+2026-04-15 09:50:19,376 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 1 existing)
+LinkedIn: no new draft needed yet
+2026-04-15 09:50:19,853 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-15 09:50:19,896 [GmailWatcher] INFO: Loaded 30 processed email IDs from disk.
+2026-04-15 09:50:19,948 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-15 09:50:37,544 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-15 09:50:40,089 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-15 09:50:43,221 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-15 09:50:49,873 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-15 09:50:50,097 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-15 09:51:03,235 [WhatsAppWatcher] INFO: Selector not found: #pane-side, trying next...
+2026-04-15 09:51:09,263 [WhatsAppWatcher] INFO: Selector not found: [data-testid="chat-list"], trying next...
+2026-04-15 09:51:09,266 [WhatsAppWatcher] INFO: Selector not found: div[aria-label="Chat list"], trying next...
+2026-04-15 09:51:09,896 [Orchestrator] ERROR: whatsapp_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-15 09:51:09,908 [Orchestrator] ERROR: gmail_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-15 09:51:09,913 [Orchestrator] ERROR: filesystem_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+^C2026-04-15 17:36:42,644 [Orchestrator] INFO: Orchestrator lock acquired (PID 6012)
+2026-04-15 17:36:42,645 [Orchestrator] INFO: ==================================================
+2026-04-15 17:36:42,645 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-15 17:36:42,645 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-15 17:36:42,646 [Orchestrator] INFO: DRY_RUN: True
+2026-04-15 17:36:42,646 [Orchestrator] INFO: ==================================================
+2026-04-15 17:36:42,650 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-15 17:36:42,652 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-15 17:36:42,656 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-15 17:36:42,660 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-15 17:36:42,672 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-15 17:36:42,700 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 1 existing)
+2026-04-15 17:36:42,765 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-15 17:36:42,767 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+LinkedIn: no new draft needed yet
+2026-04-15 17:36:43,204 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-15 17:36:43,410 [GmailWatcher] INFO: Loaded 39 processed email IDs from disk.
+2026-04-15 17:36:43,493 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-15 17:36:47,647 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-15 17:36:49,848 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-15 17:36:53,125 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-15 17:36:53,844 [WhatsAppWatcher] INFO: Selector not found: #pane-side, trying next...
+2026-04-15 17:36:53,852 [WhatsAppWatcher] INFO: Selector not found: [data-testid="chat-list"], trying next...
+2026-04-15 17:36:53,875 [WhatsAppWatcher] INFO: Selector not found: div[aria-label="Chat list"], trying next...
+2026-04-15 17:36:54,309 [WhatsAppWatcher] ERROR: WhatsApp watcher error: Page.screenshot: Target page, context or browser has been closed
+2026-04-15 17:36:54,312 [WhatsAppWatcher] ERROR: Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 63, in check_for_updates
+    page.screenshot(path=str(screenshot_path))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9819, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, context or browser has been closed
+
+2026-04-15 17:36:57,599 [Orchestrator] ERROR: whatsapp_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-15 17:36:57,613 [Orchestrator] ERROR: gmail_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-15 17:36:57,618 [Orchestrator] ERROR: filesystem_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+^C

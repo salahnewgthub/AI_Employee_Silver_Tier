@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "E:\\AI_Employee_Silver_Tier\\Vault"],
+      "env": {},
+      "disabled": false,
+      "alwaysAllow": [
+        "read_file",
+        "read_directory",
+        "write_file",
+        "create_directory",
+        "edit_file",
+        "move_file",
+        "copy_file",
+        "delete_file",
+        "search_files"
+      ]
+    }
+  }
+}
+

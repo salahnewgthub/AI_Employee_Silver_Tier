@@ -1,0 +1,5 @@
+.env
+credentials/
+whatsapp_session/
+*.pyc
+__pycache__/

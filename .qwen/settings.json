@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude *)",
+      "Read(C:\\Users\\M.TECH COMPUTER\\.claude/**)",
+      "Bash(python *)",
+      "Bash(\"c:\\program files\\git\\bin\\bash.exe\" *)",
+      "Bash(bash.exe *)",
+      "Bash(dir *)",
+      "Bash(vault.bat *)",
+      "Bash(schtasks *)",
+      "Bash(echo.)",
+      "Bash(type *)",
+      "Bash(findstr *)",
+      "Bash(echo *)",
+      "Bash(timeout *)",
+      "Bash(start *)",
+      "Bash(taskkill *)"
+    ]
+  },
+  "$version": 3
+}
