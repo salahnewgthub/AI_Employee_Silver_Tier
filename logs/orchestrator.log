@@ -1394,4 +1394,171 @@ playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, contex
 2026-04-15 17:36:57,599 [Orchestrator] ERROR: whatsapp_watcher.py crashed (exit code 3221225786). Restarting in 30s...
 2026-04-15 17:36:57,613 [Orchestrator] ERROR: gmail_watcher.py crashed (exit code 3221225786). Restarting in 30s...
 2026-04-15 17:36:57,618 [Orchestrator] ERROR: filesystem_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+^CTraceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 220, in <module>
+    main()
+    ~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 189, in main
+    acquire_lock()
+    ~~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 28, in acquire_lock
+    os.kill(old_pid, 0)
+    ~~~~~~~^^^^^^^^^^^^
+OSError: [WinError 87] The parameter is incorrect
+2026-04-16 09:29:36,350 [Orchestrator] INFO: Orchestrator lock released.
+2026-04-16 17:44:28,128 [Orchestrator] INFO: Orchestrator lock acquired (PID 9052)
+2026-04-16 17:44:28,129 [Orchestrator] INFO: ==================================================
+2026-04-16 17:44:28,129 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-16 17:44:28,129 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-16 17:44:28,129 [Orchestrator] INFO: DRY_RUN: True
+2026-04-16 17:44:28,130 [Orchestrator] INFO: ==================================================
+2026-04-16 17:44:28,131 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-16 17:44:28,133 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-16 17:44:28,136 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-16 17:44:28,142 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-16 17:44:28,159 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-16 17:44:28,204 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 1 existing)
+2026-04-16 17:44:28,205 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-16 17:44:28,206 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+2026-04-16 17:44:28,426 [GmailWatcher] INFO: Loaded 39 processed email IDs from disk.
+LinkedIn: no new draft needed yet
+2026-04-16 17:44:28,473 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-16 17:44:28,494 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-16 17:44:36,914 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-16 17:44:58,474 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-16 17:45:00,005 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-16 17:45:00,704 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-16 17:45:13,954 [WhatsAppWatcher] ERROR: WhatsApp watcher error: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://web.whatsapp.com/", waiting until "load"
+
+2026-04-16 17:45:13,998 [WhatsAppWatcher] ERROR: Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 42, in check_for_updates
+    page.goto("https://web.whatsapp.com", timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://web.whatsapp.com/", waiting until "load"
+
+
+2026-04-16 17:45:16,160 [Orchestrator] ERROR: whatsapp_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-16 17:45:16,169 [Orchestrator] ERROR: filesystem_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 220, in <module>
+    main()
+    ~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 189, in main
+    acquire_lock()
+    ~~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 28, in acquire_lock
+    os.kill(old_pid, 0)
+    ~~~~~~~^^^^^^^^^^^^
+OSError: [WinError 87] The parameter is incorrect
+Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 220, in <module>
+    main()
+    ~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 189, in main
+    acquire_lock()
+    ~~~~~~~~~~~~^^
+  File "E:\AI_Employee_Silver_Tier\scripts\orchestrator.py", line 28, in acquire_lock
+    os.kill(old_pid, 0)
+    ~~~~~~~^^^^^^^^^^^^
+OSError: [WinError 87] The parameter is incorrect
+2026-04-17 11:24:06,277 [Orchestrator] INFO: Orchestrator lock released.
+2026-04-17 17:52:55,928 [Orchestrator] INFO: Orchestrator lock acquired (PID 5148)
+2026-04-17 17:52:55,928 [Orchestrator] INFO: ==================================================
+2026-04-17 17:52:55,929 [Orchestrator] INFO: AI Employee Orchestrator Starting
+2026-04-17 17:52:55,929 [Orchestrator] INFO: Vault: E:\AI_Employee_Silver_Tier\Vault
+2026-04-17 17:52:55,930 [Orchestrator] INFO: DRY_RUN: True
+2026-04-17 17:52:55,930 [Orchestrator] INFO: ==================================================
+2026-04-17 17:52:55,932 [Orchestrator] INFO: Starting gmail_watcher.py
+2026-04-17 17:52:55,933 [Orchestrator] INFO: Starting filesystem_watcher.py
+2026-04-17 17:52:55,934 [Orchestrator] INFO: Starting whatsapp_watcher.py
+2026-04-17 17:52:55,941 [Orchestrator] INFO: Starting linkedin_watcher.py
+2026-04-17 17:52:55,960 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Needs_Action for new files...
+2026-04-17 17:52:55,990 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Pending_Approval for pending approval files... (found 1 existing)
+2026-04-17 17:52:56,001 [Orchestrator] INFO: All watchers running. Press Ctrl+C to stop.
+2026-04-17 17:52:56,002 [Orchestrator] INFO: Watching E:\AI_Employee_Silver_Tier\Vault\Approved for approved files... (found 0 existing)
+LinkedIn: no new draft needed yet
+2026-04-17 17:52:56,162 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-17 17:52:56,221 [WhatsAppWatcher] INFO: Starting WhatsAppWatcher
+2026-04-17 17:52:56,305 [GmailWatcher] INFO: Loaded 39 processed email IDs from disk.
+2026-04-17 17:53:07,165 [WhatsAppWatcher] INFO: Launching browser...
+2026-04-17 17:53:14,691 [WhatsAppWatcher] INFO: Navigating to WhatsApp Web...
+2026-04-17 17:53:20,850 [WhatsAppWatcher] INFO: Waiting for WhatsApp to fully load...
+2026-04-17 17:53:26,166 [Orchestrator] INFO: Starting linkedin_watcher.py
+LinkedIn: no new draft needed yet
+2026-04-17 17:53:26,496 [Orchestrator] INFO: linkedin_watcher.py exited cleanly. Restarting in 30s...
+2026-04-17 17:53:30,413 [WhatsAppWatcher] INFO: Selector not found: #pane-side, trying next...
+2026-04-17 17:53:30,417 [WhatsAppWatcher] INFO: Selector not found: [data-testid="chat-list"], trying next...
+2026-04-17 17:53:30,421 [WhatsAppWatcher] INFO: Selector not found: div[aria-label="Chat list"], trying next...
+2026-04-17 17:53:30,911 [WhatsAppWatcher] ERROR: WhatsApp watcher error: Page.screenshot: Target page, context or browser has been closed
+2026-04-17 17:53:30,916 [WhatsAppWatcher] ERROR: Traceback (most recent call last):
+  File "E:\AI_Employee_Silver_Tier\scripts\whatsapp_watcher.py", line 63, in check_for_updates
+    page.screenshot(path=str(screenshot_path))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9819, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\M.TECH COMPUTER\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.screenshot: Target page, context or browser has been closed
+
+2026-04-17 17:53:33,386 [Orchestrator] ERROR: filesystem_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-17 17:53:33,395 [Orchestrator] ERROR: whatsapp_watcher.py crashed (exit code 3221225786). Restarting in 30s...
+2026-04-17 17:53:33,410 [Orchestrator] ERROR: gmail_watcher.py crashed (exit code 3221225786). Restarting in 30s...
 ^C
